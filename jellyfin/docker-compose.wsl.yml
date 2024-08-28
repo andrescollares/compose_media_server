@@ -1,0 +1,15 @@
+---
+services:
+  jellyfin-wsl:
+    extends:
+      file: docker-compose.base.yml
+      service: jellyfin
+    volumes:
+      - /mnt/d/Movies:/movies:ro
+      - /mnt/d/Series:/series:ro
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]

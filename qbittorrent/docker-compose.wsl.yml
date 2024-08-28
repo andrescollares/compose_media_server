@@ -1,0 +1,7 @@
+services:
+  qbittorrent-wsl:
+    extends:
+      file: docker-compose.base.yml
+      service: qbittorrent
+    volumes:
+      - /mnt/d/Torrents:/data/downloads #optional

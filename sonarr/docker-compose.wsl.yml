@@ -1,0 +1,8 @@
+services:
+  sonarr-wsl:
+    extends:
+      file: docker-compose.base.yml
+      service: sonarr
+    volumes:
+      - /mnt/d/Series:/data/series
+      - /mnt/d/Torrents:/data/downloads

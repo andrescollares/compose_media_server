@@ -1,0 +1,8 @@
+services:
+  radarr-wsl:
+    extends:
+      file: docker-compose.base.yml
+      service: radarr
+    volumes:
+      - /mnt/d/Movies:/data/movies #optional
+      - /mnt/d/Torrents:/data/downloads

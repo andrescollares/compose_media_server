@@ -1,0 +1,9 @@
+---
+include:
+  - flaresolverr/docker-compose.yml
+  - qbittorrent/docker-compose.wsl.yml
+  - prowlarr/docker-compose.yml
+  - radarr/docker-compose.wsl.yml
+  - sonarr/docker-compose.wsl.yml
+  - jellyfin/docker-compose.wsl.yml
+  - jellyseer/docker-compose.yml
