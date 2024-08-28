@@ -6,4 +6,4 @@ include:
   - radarr/docker-compose.wsl.yml
   - sonarr/docker-compose.wsl.yml
   - jellyfin/docker-compose.wsl.yml
-  - jellyseer/docker-compose.yml
+  - jellyseerr/docker-compose.yml
